@@ -178,4 +178,19 @@ export const games: Game[] = [
       ],
     },
   },
+  {
+    id: "infinitynikki",
+    name: { "zh-CN": "无限暖暖", en: "Infinity Nikki" },
+    locales: ["zh-CN"],
+    defaultLocale: "zh-CN",
+    dataSources: {
+      "zh-CN": [
+        {
+          type: "pageData",
+          url: "https://infinitynikki.nuanpaper.com/api/news?offset={offset}&limit={limit}",
+          articleUrl: "https://infinitynikki.nuanpaper.com/news/{id}"
+        },
+      ],
+    },
+  },
 ];
